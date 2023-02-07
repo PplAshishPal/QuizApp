@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LogoComponent } from '../logo/logo.component';
 
 import { NavigationComponent } from './navigation.component';
 
@@ -8,9 +9,8 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavigationComponent ]
-    })
-    .compileComponents();
+      declarations: [NavigationComponent, LogoComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
@@ -19,5 +19,9 @@ describe('NavigationComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have as userName 'Ashish'`, () => {
+    expect(component.userName).toEqual('Ashish');
   });
 });

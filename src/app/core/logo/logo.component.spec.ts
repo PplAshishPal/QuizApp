@@ -8,9 +8,8 @@ describe('LogoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LogoComponent ]
-    })
-    .compileComponents();
+      declarations: [LogoComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LogoComponent);
     component = fixture.componentInstance;
@@ -19,5 +18,9 @@ describe('LogoComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have as logo name 'Playpower'`, () => {
+    expect(component.logo).toEqual('Playpower');
   });
 });
