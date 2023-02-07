@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { LogoComponent } from './core/logo/logo.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { InstructionsComponent } from './instructions/instructions.component';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -16,7 +15,6 @@ import { ToastrModule } from 'ngx-toastr';
     NavigationComponent,
     LogoComponent,
     HomepageComponent,
-    InstructionsComponent,
   ],
   imports: [
     BrowserModule,
