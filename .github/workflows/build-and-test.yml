@@ -31,5 +31,5 @@ jobs:
         run: |
           npm i
           npm run build
-          npm run test
+          npm run test-coverage
           
